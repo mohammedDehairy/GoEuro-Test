@@ -1,0 +1,843 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19CDD82F80A4A2EE27373B98 /* libPods-GoEuro Test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25919FDB5BAAA0662A97603A /* libPods-GoEuro Test.a */; };
+		3D051CC91DE75CF800324B47 /* GUItineraryLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D051CC81DE75CF800324B47 /* GUItineraryLoader.m */; };
+		3DB5738F1DE763BE005F8126 /* GUNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB5738E1DE763BE005F8126 /* GUNetworkReachabilityManager.m */; };
+		3DB573921DE76626005F8126 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB573911DE76626005F8126 /* Reachability.m */; };
+		3DB573941DE76644005F8126 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB573931DE76644005F8126 /* SystemConfiguration.framework */; };
+		3DF2DFF71DE7346B006815BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF2DFF61DE7346B006815BB /* main.m */; };
+		3DF2DFFA1DE7346B006815BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF2DFF91DE7346B006815BB /* AppDelegate.m */; };
+		3DF2DFFD1DE7346B006815BB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF2DFFC1DE7346B006815BB /* ViewController.m */; };
+		3DF2E0001DE7346B006815BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DF2DFFE1DE7346B006815BB /* Main.storyboard */; };
+		3DF2E0031DE7346B006815BB /* GoEuro_Test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3DF2E0011DE7346B006815BB /* GoEuro_Test.xcdatamodeld */; };
+		3DF2E0051DE7346B006815BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DF2E0041DE7346B006815BB /* Assets.xcassets */; };
+		3DF2E0081DE7346B006815BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DF2E0061DE7346B006815BB /* LaunchScreen.storyboard */; };
+		3DF2E0131DE7346B006815BB /* GoEuro_TestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF2E0121DE7346B006815BB /* GoEuro_TestTests.m */; };
+		3DF2E01E1DE7346B006815BB /* GoEuro_TestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF2E01D1DE7346B006815BB /* GoEuro_TestUITests.m */; };
+		3DF2E02F1DE73522006815BB /* GUTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF2E02E1DE73522006815BB /* GUTabBarView.m */; };
+		3DF2E0321DE73586006815BB /* GUTabBarViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF2E0311DE73586006815BB /* GUTabBarViewItem.m */; };
+		3DF2E0351DE73CC7006815BB /* GUTabBarCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF2E0341DE73CC7006815BB /* GUTabBarCollectionViewCell.m */; };
+		3DF2E03A1DE7588A006815BB /* GUItinerary.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF2E0391DE7588A006815BB /* GUItinerary.m */; };
+		885E81F0711B55EC77441F1C /* libPods-GoEuro TestUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 598DA474C88AA3B218F99013 /* libPods-GoEuro TestUITests.a */; };
+		D31930212C66A44E96F6FE14 /* libPods-GoEuro TestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE4230B25741DD54608806E6 /* libPods-GoEuro TestTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3DF2E00F1DE7346B006815BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DF2DFEA1DE7346B006815BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DF2DFF11DE7346B006815BB;
+			remoteInfo = "GoEuro Test";
+		};
+		3DF2E01A1DE7346B006815BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DF2DFEA1DE7346B006815BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DF2DFF11DE7346B006815BB;
+			remoteInfo = "GoEuro Test";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		079E5039B41E46CA28CA0F0F /* Pods-GoEuro TestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoEuro TestUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoEuro TestUITests/Pods-GoEuro TestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		25919FDB5BAAA0662A97603A /* libPods-GoEuro Test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoEuro Test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D051CC71DE75CF800324B47 /* GUItineraryLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUItineraryLoader.h; sourceTree = "<group>"; };
+		3D051CC81DE75CF800324B47 /* GUItineraryLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GUItineraryLoader.m; sourceTree = "<group>"; };
+		3DB5738D1DE763BE005F8126 /* GUNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		3DB5738E1DE763BE005F8126 /* GUNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GUNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		3DB573901DE76626005F8126 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		3DB573911DE76626005F8126 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		3DB573931DE76644005F8126 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3DF2DFF21DE7346B006815BB /* GoEuro Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GoEuro Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DF2DFF61DE7346B006815BB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3DF2DFF81DE7346B006815BB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3DF2DFF91DE7346B006815BB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3DF2DFFB1DE7346B006815BB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3DF2DFFC1DE7346B006815BB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3DF2DFFF1DE7346B006815BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3DF2E0021DE7346B006815BB /* GoEuro_Test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GoEuro_Test.xcdatamodel; sourceTree = "<group>"; };
+		3DF2E0041DE7346B006815BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DF2E0071DE7346B006815BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3DF2E0091DE7346B006815BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DF2E00E1DE7346B006815BB /* GoEuro TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GoEuro TestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DF2E0121DE7346B006815BB /* GoEuro_TestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoEuro_TestTests.m; sourceTree = "<group>"; };
+		3DF2E0141DE7346B006815BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DF2E0191DE7346B006815BB /* GoEuro TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GoEuro TestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DF2E01D1DE7346B006815BB /* GoEuro_TestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoEuro_TestUITests.m; sourceTree = "<group>"; };
+		3DF2E01F1DE7346B006815BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DF2E02D1DE73522006815BB /* GUTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUTabBarView.h; sourceTree = "<group>"; };
+		3DF2E02E1DE73522006815BB /* GUTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GUTabBarView.m; sourceTree = "<group>"; };
+		3DF2E0301DE73586006815BB /* GUTabBarViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUTabBarViewItem.h; sourceTree = "<group>"; };
+		3DF2E0311DE73586006815BB /* GUTabBarViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GUTabBarViewItem.m; sourceTree = "<group>"; };
+		3DF2E0331DE73CC7006815BB /* GUTabBarCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUTabBarCollectionViewCell.h; sourceTree = "<group>"; };
+		3DF2E0341DE73CC7006815BB /* GUTabBarCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GUTabBarCollectionViewCell.m; sourceTree = "<group>"; };
+		3DF2E0381DE7588A006815BB /* GUItinerary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUItinerary.h; sourceTree = "<group>"; };
+		3DF2E0391DE7588A006815BB /* GUItinerary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GUItinerary.m; sourceTree = "<group>"; };
+		434706B154FBC2E45BFBFE34 /* Pods-GoEuro TestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoEuro TestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoEuro TestTests/Pods-GoEuro TestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		50A43B20F2A22B237AEDB89D /* Pods-GoEuro Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoEuro Test.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoEuro Test/Pods-GoEuro Test.release.xcconfig"; sourceTree = "<group>"; };
+		598DA474C88AA3B218F99013 /* libPods-GoEuro TestUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoEuro TestUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		823A09DFFFB552246512088B /* Pods-GoEuro TestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoEuro TestUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoEuro TestUITests/Pods-GoEuro TestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AF8995B3A66430BFB65BA4C1 /* Pods-GoEuro TestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoEuro TestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoEuro TestTests/Pods-GoEuro TestTests.release.xcconfig"; sourceTree = "<group>"; };
+		BD5BD8DE210B45D953B21DF0 /* Pods-GoEuro Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoEuro Test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoEuro Test/Pods-GoEuro Test.debug.xcconfig"; sourceTree = "<group>"; };
+		EE4230B25741DD54608806E6 /* libPods-GoEuro TestTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoEuro TestTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DF2DFEF1DE7346B006815BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB573941DE76644005F8126 /* SystemConfiguration.framework in Frameworks */,
+				19CDD82F80A4A2EE27373B98 /* libPods-GoEuro Test.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DF2E00B1DE7346B006815BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D31930212C66A44E96F6FE14 /* libPods-GoEuro TestTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DF2E0161DE7346B006815BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				885E81F0711B55EC77441F1C /* libPods-GoEuro TestUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D051CC61DE75CE700324B47 /* GUItineraryLoader */ = {
+			isa = PBXGroup;
+			children = (
+				3D051CC71DE75CF800324B47 /* GUItineraryLoader.h */,
+				3D051CC81DE75CF800324B47 /* GUItineraryLoader.m */,
+			);
+			path = GUItineraryLoader;
+			sourceTree = "<group>";
+		};
+		3DB5738B1DE763AC005F8126 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3DB5738C1DE763AC005F8126 /* GUNetworkReachabilityManager */,
+			);
+			name = Utilities;
+			path = "GoEuro Test/Utilities";
+			sourceTree = "<group>";
+		};
+		3DB5738C1DE763AC005F8126 /* GUNetworkReachabilityManager */ = {
+			isa = PBXGroup;
+			children = (
+				3DB573901DE76626005F8126 /* Reachability.h */,
+				3DB573911DE76626005F8126 /* Reachability.m */,
+				3DB5738D1DE763BE005F8126 /* GUNetworkReachabilityManager.h */,
+				3DB5738E1DE763BE005F8126 /* GUNetworkReachabilityManager.m */,
+			);
+			path = GUNetworkReachabilityManager;
+			sourceTree = "<group>";
+		};
+		3DF2DFE91DE7346B006815BB = {
+			isa = PBXGroup;
+			children = (
+				3DB5738B1DE763AC005F8126 /* Utilities */,
+				3DF2E0361DE75875006815BB /* Model Objects */,
+				3DF2E02B1DE734DA006815BB /* Custom Views */,
+				3DF2DFF41DE7346B006815BB /* GoEuro Test */,
+				3DF2E0111DE7346B006815BB /* GoEuro TestTests */,
+				3DF2E01C1DE7346B006815BB /* GoEuro TestUITests */,
+				3DF2DFF31DE7346B006815BB /* Products */,
+				68468A3D04A23DD9CFE64FF2 /* Pods */,
+				F4A218C90D5B04188F7DA907 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3DF2DFF31DE7346B006815BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DF2DFF21DE7346B006815BB /* GoEuro Test.app */,
+				3DF2E00E1DE7346B006815BB /* GoEuro TestTests.xctest */,
+				3DF2E0191DE7346B006815BB /* GoEuro TestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DF2DFF41DE7346B006815BB /* GoEuro Test */ = {
+			isa = PBXGroup;
+			children = (
+				3DF2DFF81DE7346B006815BB /* AppDelegate.h */,
+				3DF2DFF91DE7346B006815BB /* AppDelegate.m */,
+				3DF2DFFB1DE7346B006815BB /* ViewController.h */,
+				3DF2DFFC1DE7346B006815BB /* ViewController.m */,
+				3DF2DFFE1DE7346B006815BB /* Main.storyboard */,
+				3DF2E0041DE7346B006815BB /* Assets.xcassets */,
+				3DF2E0061DE7346B006815BB /* LaunchScreen.storyboard */,
+				3DF2E0091DE7346B006815BB /* Info.plist */,
+				3DF2E0011DE7346B006815BB /* GoEuro_Test.xcdatamodeld */,
+				3DF2DFF51DE7346B006815BB /* Supporting Files */,
+			);
+			path = "GoEuro Test";
+			sourceTree = "<group>";
+		};
+		3DF2DFF51DE7346B006815BB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DF2DFF61DE7346B006815BB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3DF2E0111DE7346B006815BB /* GoEuro TestTests */ = {
+			isa = PBXGroup;
+			children = (
+				3DF2E0121DE7346B006815BB /* GoEuro_TestTests.m */,
+				3DF2E0141DE7346B006815BB /* Info.plist */,
+			);
+			path = "GoEuro TestTests";
+			sourceTree = "<group>";
+		};
+		3DF2E01C1DE7346B006815BB /* GoEuro TestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3DF2E01D1DE7346B006815BB /* GoEuro_TestUITests.m */,
+				3DF2E01F1DE7346B006815BB /* Info.plist */,
+			);
+			path = "GoEuro TestUITests";
+			sourceTree = "<group>";
+		};
+		3DF2E02B1DE734DA006815BB /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				3DF2E02C1DE73506006815BB /* GUTabBarView */,
+			);
+			name = "Custom Views";
+			path = "GoEuro Test/Custom Views";
+			sourceTree = "<group>";
+		};
+		3DF2E02C1DE73506006815BB /* GUTabBarView */ = {
+			isa = PBXGroup;
+			children = (
+				3DF2E02D1DE73522006815BB /* GUTabBarView.h */,
+				3DF2E02E1DE73522006815BB /* GUTabBarView.m */,
+				3DF2E0301DE73586006815BB /* GUTabBarViewItem.h */,
+				3DF2E0311DE73586006815BB /* GUTabBarViewItem.m */,
+				3DF2E0331DE73CC7006815BB /* GUTabBarCollectionViewCell.h */,
+				3DF2E0341DE73CC7006815BB /* GUTabBarCollectionViewCell.m */,
+			);
+			path = GUTabBarView;
+			sourceTree = "<group>";
+		};
+		3DF2E0361DE75875006815BB /* Model Objects */ = {
+			isa = PBXGroup;
+			children = (
+				3D051CC61DE75CE700324B47 /* GUItineraryLoader */,
+				3DF2E0371DE75875006815BB /* GUItinerary */,
+			);
+			name = "Model Objects";
+			path = "GoEuro Test/Model Objects";
+			sourceTree = "<group>";
+		};
+		3DF2E0371DE75875006815BB /* GUItinerary */ = {
+			isa = PBXGroup;
+			children = (
+				3DF2E0381DE7588A006815BB /* GUItinerary.h */,
+				3DF2E0391DE7588A006815BB /* GUItinerary.m */,
+			);
+			path = GUItinerary;
+			sourceTree = "<group>";
+		};
+		68468A3D04A23DD9CFE64FF2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD5BD8DE210B45D953B21DF0 /* Pods-GoEuro Test.debug.xcconfig */,
+				50A43B20F2A22B237AEDB89D /* Pods-GoEuro Test.release.xcconfig */,
+				434706B154FBC2E45BFBFE34 /* Pods-GoEuro TestTests.debug.xcconfig */,
+				AF8995B3A66430BFB65BA4C1 /* Pods-GoEuro TestTests.release.xcconfig */,
+				823A09DFFFB552246512088B /* Pods-GoEuro TestUITests.debug.xcconfig */,
+				079E5039B41E46CA28CA0F0F /* Pods-GoEuro TestUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F4A218C90D5B04188F7DA907 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DB573931DE76644005F8126 /* SystemConfiguration.framework */,
+				25919FDB5BAAA0662A97603A /* libPods-GoEuro Test.a */,
+				EE4230B25741DD54608806E6 /* libPods-GoEuro TestTests.a */,
+				598DA474C88AA3B218F99013 /* libPods-GoEuro TestUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DF2DFF11DE7346B006815BB /* GoEuro Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DF2E0221DE7346B006815BB /* Build configuration list for PBXNativeTarget "GoEuro Test" */;
+			buildPhases = (
+				EBEFCD3E0F60A4E27AD62406 /* [CP] Check Pods Manifest.lock */,
+				3DF2DFEE1DE7346B006815BB /* Sources */,
+				3DF2DFEF1DE7346B006815BB /* Frameworks */,
+				3DF2DFF01DE7346B006815BB /* Resources */,
+				5F0B167C637337A1A187806F /* [CP] Embed Pods Frameworks */,
+				84FEFB7DDDD03D0E932FD1B5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GoEuro Test";
+			productName = "GoEuro Test";
+			productReference = 3DF2DFF21DE7346B006815BB /* GoEuro Test.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3DF2E00D1DE7346B006815BB /* GoEuro TestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DF2E0251DE7346B006815BB /* Build configuration list for PBXNativeTarget "GoEuro TestTests" */;
+			buildPhases = (
+				30958E8ED2AEEA9522023629 /* [CP] Check Pods Manifest.lock */,
+				3DF2E00A1DE7346B006815BB /* Sources */,
+				3DF2E00B1DE7346B006815BB /* Frameworks */,
+				3DF2E00C1DE7346B006815BB /* Resources */,
+				F5C3D15911C040A4A3BD4F4E /* [CP] Embed Pods Frameworks */,
+				9E4E9A13336CF5948BE3F3AE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DF2E0101DE7346B006815BB /* PBXTargetDependency */,
+			);
+			name = "GoEuro TestTests";
+			productName = "GoEuro TestTests";
+			productReference = 3DF2E00E1DE7346B006815BB /* GoEuro TestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3DF2E0181DE7346B006815BB /* GoEuro TestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DF2E0281DE7346B006815BB /* Build configuration list for PBXNativeTarget "GoEuro TestUITests" */;
+			buildPhases = (
+				CFA0C54658906BAC596B551B /* [CP] Check Pods Manifest.lock */,
+				3DF2E0151DE7346B006815BB /* Sources */,
+				3DF2E0161DE7346B006815BB /* Frameworks */,
+				3DF2E0171DE7346B006815BB /* Resources */,
+				04BA142A53A963005EDF4766 /* [CP] Embed Pods Frameworks */,
+				77753CDE533C8A3040C75FE0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DF2E01B1DE7346B006815BB /* PBXTargetDependency */,
+			);
+			name = "GoEuro TestUITests";
+			productName = "GoEuro TestUITests";
+			productReference = 3DF2E0191DE7346B006815BB /* GoEuro TestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DF2DFEA1DE7346B006815BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "mohamed El Dehairy";
+				TargetAttributes = {
+					3DF2DFF11DE7346B006815BB = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					3DF2E00D1DE7346B006815BB = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 3DF2DFF11DE7346B006815BB;
+					};
+					3DF2E0181DE7346B006815BB = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 3DF2DFF11DE7346B006815BB;
+					};
+				};
+			};
+			buildConfigurationList = 3DF2DFED1DE7346B006815BB /* Build configuration list for PBXProject "GoEuro Test" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DF2DFE91DE7346B006815BB;
+			productRefGroup = 3DF2DFF31DE7346B006815BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DF2DFF11DE7346B006815BB /* GoEuro Test */,
+				3DF2E00D1DE7346B006815BB /* GoEuro TestTests */,
+				3DF2E0181DE7346B006815BB /* GoEuro TestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DF2DFF01DE7346B006815BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DF2E0081DE7346B006815BB /* LaunchScreen.storyboard in Resources */,
+				3DF2E0051DE7346B006815BB /* Assets.xcassets in Resources */,
+				3DF2E0001DE7346B006815BB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DF2E00C1DE7346B006815BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DF2E0171DE7346B006815BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04BA142A53A963005EDF4766 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoEuro TestUITests/Pods-GoEuro TestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		30958E8ED2AEEA9522023629 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5F0B167C637337A1A187806F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoEuro Test/Pods-GoEuro Test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77753CDE533C8A3040C75FE0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoEuro TestUITests/Pods-GoEuro TestUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84FEFB7DDDD03D0E932FD1B5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoEuro Test/Pods-GoEuro Test-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E4E9A13336CF5948BE3F3AE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoEuro TestTests/Pods-GoEuro TestTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFA0C54658906BAC596B551B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EBEFCD3E0F60A4E27AD62406 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F5C3D15911C040A4A3BD4F4E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoEuro TestTests/Pods-GoEuro TestTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DF2DFEE1DE7346B006815BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DF2E0351DE73CC7006815BB /* GUTabBarCollectionViewCell.m in Sources */,
+				3DF2E0031DE7346B006815BB /* GoEuro_Test.xcdatamodeld in Sources */,
+				3DF2E02F1DE73522006815BB /* GUTabBarView.m in Sources */,
+				3DB573921DE76626005F8126 /* Reachability.m in Sources */,
+				3DF2E03A1DE7588A006815BB /* GUItinerary.m in Sources */,
+				3DF2DFFD1DE7346B006815BB /* ViewController.m in Sources */,
+				3DF2E0321DE73586006815BB /* GUTabBarViewItem.m in Sources */,
+				3DF2DFFA1DE7346B006815BB /* AppDelegate.m in Sources */,
+				3DF2DFF71DE7346B006815BB /* main.m in Sources */,
+				3D051CC91DE75CF800324B47 /* GUItineraryLoader.m in Sources */,
+				3DB5738F1DE763BE005F8126 /* GUNetworkReachabilityManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DF2E00A1DE7346B006815BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DF2E0131DE7346B006815BB /* GoEuro_TestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DF2E0151DE7346B006815BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DF2E01E1DE7346B006815BB /* GoEuro_TestUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DF2E0101DE7346B006815BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DF2DFF11DE7346B006815BB /* GoEuro Test */;
+			targetProxy = 3DF2E00F1DE7346B006815BB /* PBXContainerItemProxy */;
+		};
+		3DF2E01B1DE7346B006815BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DF2DFF11DE7346B006815BB /* GoEuro Test */;
+			targetProxy = 3DF2E01A1DE7346B006815BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3DF2DFFE1DE7346B006815BB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DF2DFFF1DE7346B006815BB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3DF2E0061DE7346B006815BB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DF2E0071DE7346B006815BB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3DF2E0201DE7346B006815BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3DF2E0211DE7346B006815BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DF2E0231DE7346B006815BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD5BD8DE210B45D953B21DF0 /* Pods-GoEuro Test.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "GoEuro Test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.GoEuro.Test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3DF2E0241DE7346B006815BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50A43B20F2A22B237AEDB89D /* Pods-GoEuro Test.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "GoEuro Test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.GoEuro.Test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3DF2E0261DE7346B006815BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 434706B154FBC2E45BFBFE34 /* Pods-GoEuro TestTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "GoEuro TestTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.freelancecom.GoEuro.Test.GoEuro-TestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoEuro Test.app/GoEuro Test";
+			};
+			name = Debug;
+		};
+		3DF2E0271DE7346B006815BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF8995B3A66430BFB65BA4C1 /* Pods-GoEuro TestTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "GoEuro TestTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.freelancecom.GoEuro.Test.GoEuro-TestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoEuro Test.app/GoEuro Test";
+			};
+			name = Release;
+		};
+		3DF2E0291DE7346B006815BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 823A09DFFFB552246512088B /* Pods-GoEuro TestUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = "GoEuro TestUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.freelancecom.GoEuro.Test.GoEuro-TestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "GoEuro Test";
+			};
+			name = Debug;
+		};
+		3DF2E02A1DE7346B006815BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 079E5039B41E46CA28CA0F0F /* Pods-GoEuro TestUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = "GoEuro TestUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.freelancecom.GoEuro.Test.GoEuro-TestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "GoEuro Test";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DF2DFED1DE7346B006815BB /* Build configuration list for PBXProject "GoEuro Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DF2E0201DE7346B006815BB /* Debug */,
+				3DF2E0211DE7346B006815BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DF2E0221DE7346B006815BB /* Build configuration list for PBXNativeTarget "GoEuro Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DF2E0231DE7346B006815BB /* Debug */,
+				3DF2E0241DE7346B006815BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DF2E0251DE7346B006815BB /* Build configuration list for PBXNativeTarget "GoEuro TestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DF2E0261DE7346B006815BB /* Debug */,
+				3DF2E0271DE7346B006815BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DF2E0281DE7346B006815BB /* Build configuration list for PBXNativeTarget "GoEuro TestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DF2E0291DE7346B006815BB /* Debug */,
+				3DF2E02A1DE7346B006815BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3DF2E0011DE7346B006815BB /* GoEuro_Test.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3DF2E0021DE7346B006815BB /* GoEuro_Test.xcdatamodel */,
+			);
+			currentVersion = 3DF2E0021DE7346B006815BB /* GoEuro_Test.xcdatamodel */;
+			path = GoEuro_Test.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3DF2DFEA1DE7346B006815BB /* Project object */;
+}
