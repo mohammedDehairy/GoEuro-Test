@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
         [self fetchFromRemoteWithType:type completionBlock:completion];
     }else{
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-            NSData *cachedData = [NSData dataWithContentsOfFile:[self cachFilePathForType:type].absoluteString];
+            NSData *cachedData = [NSData dataWithContentsOfFile:[self cachFilePathForType:type].path];
             if(cachedData){
                 NSError *parseError;
                 NSArray *result = [self parseJsonData:cachedData withType:type error:&parseError];
