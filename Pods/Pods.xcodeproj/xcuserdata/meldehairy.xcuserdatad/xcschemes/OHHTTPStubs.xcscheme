@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'ECFA9D4F6D739424724D9AF6BF233FB6'
-               BlueprintName = 'Pods-GoEuro Test'
+               BlueprintIdentifier = '0A578B91EB23BBD0EB78884A6FCB29D9'
+               BlueprintName = 'OHHTTPStubs'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-GoEuro Test.a'>
+               BuildableName = 'libOHHTTPStubs.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

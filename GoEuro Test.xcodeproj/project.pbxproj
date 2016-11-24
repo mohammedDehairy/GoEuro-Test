@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		19CDD82F80A4A2EE27373B98 /* libPods-GoEuro Test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25919FDB5BAAA0662A97603A /* libPods-GoEuro Test.a */; };
 		3D051CC91DE75CF800324B47 /* GUItineraryLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D051CC81DE75CF800324B47 /* GUItineraryLoader.m */; };
+		3D5278261DE78D0200A13422 /* GUItineraryLoaderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5278251DE78D0200A13422 /* GUItineraryLoaderTest.m */; };
+		3D5278281DE78E0A00A13422 /* test Train data.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D5278271DE78E0A00A13422 /* test Train data.json */; };
 		3DB5738F1DE763BE005F8126 /* GUNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB5738E1DE763BE005F8126 /* GUNetworkReachabilityManager.m */; };
 		3DB573921DE76626005F8126 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB573911DE76626005F8126 /* Reachability.m */; };
 		3DB573941DE76644005F8126 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB573931DE76644005F8126 /* SystemConfiguration.framework */; };
@@ -51,6 +53,8 @@
 		25919FDB5BAAA0662A97603A /* libPods-GoEuro Test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoEuro Test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D051CC71DE75CF800324B47 /* GUItineraryLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUItineraryLoader.h; sourceTree = "<group>"; };
 		3D051CC81DE75CF800324B47 /* GUItineraryLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GUItineraryLoader.m; sourceTree = "<group>"; };
+		3D5278251DE78D0200A13422 /* GUItineraryLoaderTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GUItineraryLoaderTest.m; sourceTree = "<group>"; };
+		3D5278271DE78E0A00A13422 /* test Train data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "test Train data.json"; sourceTree = "<group>"; };
 		3DB5738D1DE763BE005F8126 /* GUNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUNetworkReachabilityManager.h; sourceTree = "<group>"; };
 		3DB5738E1DE763BE005F8126 /* GUNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GUNetworkReachabilityManager.m; sourceTree = "<group>"; };
 		3DB573901DE76626005F8126 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
@@ -201,8 +205,10 @@
 		3DF2E0111DE7346B006815BB /* GoEuro TestTests */ = {
 			isa = PBXGroup;
 			children = (
+				3D5278271DE78E0A00A13422 /* test Train data.json */,
 				3DF2E0121DE7346B006815BB /* GoEuro_TestTests.m */,
 				3DF2E0141DE7346B006815BB /* Info.plist */,
+				3D5278251DE78D0200A13422 /* GUItineraryLoaderTest.m */,
 			);
 			path = "GoEuro TestTests";
 			sourceTree = "<group>";
@@ -403,6 +409,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D5278281DE78E0A00A13422 /* test Train data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,6 +583,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D5278261DE78D0200A13422 /* GUItineraryLoaderTest.m in Sources */,
 				3DF2E0131DE7346B006815BB /* GoEuro_TestTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

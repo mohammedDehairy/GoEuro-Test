@@ -5,6 +5,7 @@
 
 target 'GoEuro Test' do
 pod 'SDWebImage', '~>3.8'
+pod 'OHHTTPStubs'
 end
 
 target 'GoEuro TestTests' do

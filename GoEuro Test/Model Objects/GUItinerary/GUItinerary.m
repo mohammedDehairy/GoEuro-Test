@@ -15,13 +15,15 @@
             return nil;
         }
         
-        if([dict[@"price_in_euros"] isKindOfClass:[NSString class]]){
-            _priceEuro = ((NSString*)dict[@"price_in_euros"]).floatValue;
+        if([dict[@"price_in_euros"] isKindOfClass:[NSNumber class]]){
+            _priceEuro = ((NSNumber*)dict[@"price_in_euros"]).floatValue;
         }
         
         
         if([dict[@"provider_logo"] isKindOfClass:[NSString class]]){
-            _logoUrl = [NSURL URLWithString:dict[@"provider_logo"]];
+            NSMutableString *logoUrl = [NSMutableString stringWithString:dict[@"provider_logo"]];
+            [logoUrl replaceOccurrencesOfString:@"{size}" withString:@"63" options:NSCaseInsensitiveSearch range:NSMakeRange(0, logoUrl.length) ];
+            _logoUrl = [NSURL URLWithString:logoUrl];
         }
         
         

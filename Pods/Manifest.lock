@@ -1,14 +1,29 @@
 PODS:
+  - OHHTTPStubs (5.2.2):
+    - OHHTTPStubs/Default (= 5.2.2)
+  - OHHTTPStubs/Core (5.2.2)
+  - OHHTTPStubs/Default (5.2.2):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (5.2.2):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (5.2.2):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (5.2.2)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
 
 DEPENDENCIES:
+  - OHHTTPStubs
   - SDWebImage (~> 3.8)
 
 SPEC CHECKSUMS:
+  OHHTTPStubs: 34d9d0994e64fcf8552dbfade5ce82ada913ee31
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
 
-PODFILE CHECKSUM: f756d5fd92d6751a1f3e7353748671815a38de20
+PODFILE CHECKSUM: 0fbd8500ff379cfc3117441e8f0ec5a0917d9b36
 
 COCOAPODS: 1.1.1
