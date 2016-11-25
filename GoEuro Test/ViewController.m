@@ -128,4 +128,12 @@ static NSString * const cellId = @"cellId";
     
     return cell;
 }
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"" message:@"Offer details are not yet implemented!" preferredStyle:UIAlertControllerStyleAlert];
+    [alertController addAction:[UIAlertAction actionWithTitle:@"ok" style:UIAlertActionStyleCancel handler:nil]];
+    [self presentViewController:alertController animated:YES completion:nil];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+                                          
+}
 @end
