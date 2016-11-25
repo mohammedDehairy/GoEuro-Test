@@ -28,6 +28,8 @@ typedef NS_ENUM(NSUInteger,GUItineraryType) {
 @property(nonatomic,assign,readonly)NSUInteger arrivalMinute;
 @property(nonatomic,assign,readonly)NSUInteger noOfStops;
 @property(nonatomic,assign,readonly)GUItineraryType type;
+@property(nonatomic,strong,readonly)NSString *durationFormattedString;
+@property(nonatomic,strong,readonly)NSString *priceFormatedString;
 @end
 
 NS_ASSUME_NONNULL_END

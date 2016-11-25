@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef void (^GUTabBarViewItemCallBack)(GUTabBarViewItem *item);
+typedef void (^GUTabBarViewItemCallBack)(NSInteger itemIndex);
 
 @interface GUTabBarView : UIView
 -(instancetype)initWithItems:( NSArray<GUTabBarViewItem*>*)items frame:(CGRect)frame NS_DESIGNATED_INITIALIZER;

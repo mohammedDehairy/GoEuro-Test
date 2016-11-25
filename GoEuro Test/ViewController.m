@@ -9,6 +9,10 @@
 #import "ViewController.h"
 #import "GUTabBarView.h"
 #import "GUItineraryLoader.h"
+#import "GUItineraryTableViewCell.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+
+static NSString * const cellId = @"cellId";
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UITableView *tableView;
@@ -39,6 +43,13 @@
         [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_tabBar]|" options:0 metrics:nil views:viewsDict]];
         [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.tabBar attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTop multiplier:1.0 constant:0.0]];
         [self.tabBar addConstraint:[NSLayoutConstraint constraintWithItem:_tabBar attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:0.0 constant:70]];
+        
+        __weak ViewController *weakSelf = self;
+        self.tabBar.tapCallBack = ^(NSInteger itemIndex){
+            __strong ViewController *strongSelf = weakSelf;
+            strongSelf.selectedIndex = itemIndex;
+            [strongSelf.tableView reloadData];
+        };
     }
     
     // Table View
@@ -47,7 +58,11 @@
         self.tableView.delegate = self;
         self.tableView.dataSource = self;
         self.tableView.translatesAutoresizingMaskIntoConstraints = NO;
+        self.tableView.rowHeight = 100;
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         [self.view addSubview:self.tableView];
+        
+        [self.tableView registerNib:[UINib nibWithNibName:@"GUItineraryTableViewCell" bundle:nil] forCellReuseIdentifier:cellId];
         
         NSDictionary *viewsDict = NSDictionaryOfVariableBindings(_tableView);
         [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_tableView]|" options:0 metrics:nil views:viewsDict]];
@@ -59,6 +74,8 @@
     self.dataSource = [NSMutableArray arrayWithArray:@[[NSArray array],[NSArray array],[NSArray array]]];
     
     [self loadDataWithType:GUItineraryTypeTrain];
+    [self loadDataWithType:GUItineraryTypeBus];
+    [self loadDataWithType:GUItineraryTypeFlight];
     
 }
 
@@ -66,7 +83,9 @@
     [GUItineraryLoader loadItinerariesWithType:type completionBlock:^(NSArray<GUItinerary*>* result,NSError *error){
         if(!error){
             self.dataSource[type] = result;
-            [self.tableView reloadData];
+            if(type == _selectedIndex){
+                [self.tableView reloadData];
+            }
         }
     }];
 }
@@ -86,12 +105,27 @@
 }
 
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString * const cellId = @"cellId";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+    
+    GUItineraryTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId forIndexPath:indexPath];
     
     if(!cell){
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellId];
+        cell = [[GUItineraryTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellId];
     }
+    
+    GUItinerary *itinerary = self.dataSource[self.selectedIndex][indexPath.row];
+    [cell.providerImageView sd_setImageWithURL:itinerary.logoUrl];
+    [cell.timesLabel setText:[NSString stringWithFormat:@"%02lu:%02lu - %02lu:%02lu",itinerary.depHour,itinerary.depMinute,itinerary.arrivalHour,itinerary.arrivalMinute]];
+    [cell.priceLabel setText:itinerary.priceFormatedString];
+    
+    NSString *noOfStopsString = nil;
+    
+    if(itinerary.noOfStops == 0){
+        noOfStopsString = [NSString stringWithFormat:@"%@  %@",@"Direct",itinerary.durationFormattedString];
+    }else{
+        noOfStopsString = [NSString stringWithFormat:@"%lu  %@",itinerary.noOfStops,itinerary.durationFormattedString];
+    }
+    cell.noOfStopsLabel.text = noOfStopsString;
+    
     return cell;
 }
 @end

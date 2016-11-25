@@ -9,6 +9,8 @@
 #import "GUItinerary.h"
 
 @implementation GUItinerary
+@synthesize durationFormattedString = _durationFormattedString;
+@synthesize priceFormatedString = _priceFormatedString;
 -(instancetype)initWithJsonDictionary:(NSDictionary *)dict type:(GUItineraryType)type{
     if((self = [super init])){
         if(![dict isKindOfClass:[NSDictionary class]]){
@@ -50,5 +52,33 @@
         _type = type;
     }
     return self;
+}
+
+-(NSString*)durationFormattedString{
+    if(!_durationFormattedString){
+        NSUInteger depMinutes = _depHour*60+_depMinute;
+        NSUInteger arrMinutes = _arrivalHour*60+_arrivalMinute;
+        
+        NSInteger diff = arrMinutes-depMinutes;
+        
+        if(diff < 0){
+            diff = 24*60 - depMinutes + arrMinutes;
+        }
+        
+        _durationFormattedString = [NSString stringWithFormat:@"%lu:%lu",diff/60,diff % 60];
+    }
+    
+    return _durationFormattedString;
+}
+
+-(NSString*)priceFormatedString{
+    if(!_priceFormatedString){
+        NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
+        numberFormatter.locale = [NSLocale currentLocale];
+        numberFormatter.numberStyle = NSNumberFormatterCurrencyStyle;
+        numberFormatter.currencyCode = @"EUR";
+        _priceFormatedString = [numberFormatter stringFromNumber:[NSNumber numberWithInteger:_priceEuro]];
+    }
+    return _priceFormatedString;
 }
 @end

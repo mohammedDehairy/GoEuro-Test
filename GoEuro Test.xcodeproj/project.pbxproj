@@ -14,6 +14,8 @@
 		3DB5738F1DE763BE005F8126 /* GUNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB5738E1DE763BE005F8126 /* GUNetworkReachabilityManager.m */; };
 		3DB573921DE76626005F8126 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB573911DE76626005F8126 /* Reachability.m */; };
 		3DB573941DE76644005F8126 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB573931DE76644005F8126 /* SystemConfiguration.framework */; };
+		3DD41C6B1DE8545F00E5EA68 /* GUItineraryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD41C691DE8545F00E5EA68 /* GUItineraryTableViewCell.m */; };
+		3DD41C6C1DE8545F00E5EA68 /* GUItineraryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DD41C6A1DE8545F00E5EA68 /* GUItineraryTableViewCell.xib */; };
 		3DF2DFF71DE7346B006815BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF2DFF61DE7346B006815BB /* main.m */; };
 		3DF2DFFA1DE7346B006815BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF2DFF91DE7346B006815BB /* AppDelegate.m */; };
 		3DF2DFFD1DE7346B006815BB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF2DFFC1DE7346B006815BB /* ViewController.m */; };
@@ -60,6 +62,9 @@
 		3DB573901DE76626005F8126 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		3DB573911DE76626005F8126 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		3DB573931DE76644005F8126 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3DD41C681DE8545F00E5EA68 /* GUItineraryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUItineraryTableViewCell.h; sourceTree = "<group>"; };
+		3DD41C691DE8545F00E5EA68 /* GUItineraryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GUItineraryTableViewCell.m; sourceTree = "<group>"; };
+		3DD41C6A1DE8545F00E5EA68 /* GUItineraryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GUItineraryTableViewCell.xib; sourceTree = "<group>"; };
 		3DF2DFF21DE7346B006815BB /* GoEuro Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GoEuro Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DF2DFF61DE7346B006815BB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3DF2DFF81DE7346B006815BB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -152,6 +157,16 @@
 			path = GUNetworkReachabilityManager;
 			sourceTree = "<group>";
 		};
+		3DD41C641DE839E700E5EA68 /* GUItineraryTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				3DD41C681DE8545F00E5EA68 /* GUItineraryTableViewCell.h */,
+				3DD41C691DE8545F00E5EA68 /* GUItineraryTableViewCell.m */,
+				3DD41C6A1DE8545F00E5EA68 /* GUItineraryTableViewCell.xib */,
+			);
+			path = GUItineraryTableViewCell;
+			sourceTree = "<group>";
+		};
 		3DF2DFE91DE7346B006815BB = {
 			isa = PBXGroup;
 			children = (
@@ -225,6 +240,7 @@
 		3DF2E02B1DE734DA006815BB /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				3DD41C641DE839E700E5EA68 /* GUItineraryTableViewCell */,
 				3DF2E02C1DE73506006815BB /* GUTabBarView */,
 			);
 			name = "Custom Views";
@@ -402,6 +418,7 @@
 				3DF2E0081DE7346B006815BB /* LaunchScreen.storyboard in Resources */,
 				3DF2E0051DE7346B006815BB /* Assets.xcassets in Resources */,
 				3DF2E0001DE7346B006815BB /* Main.storyboard in Resources */,
+				3DD41C6C1DE8545F00E5EA68 /* GUItineraryTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,6 +589,7 @@
 				3DF2E03A1DE7588A006815BB /* GUItinerary.m in Sources */,
 				3DF2DFFD1DE7346B006815BB /* ViewController.m in Sources */,
 				3DF2E0321DE73586006815BB /* GUTabBarViewItem.m in Sources */,
+				3DD41C6B1DE8545F00E5EA68 /* GUItineraryTableViewCell.m in Sources */,
 				3DF2DFFA1DE7346B006815BB /* AppDelegate.m in Sources */,
 				3DF2DFF71DE7346B006815BB /* main.m in Sources */,
 				3D051CC91DE75CF800324B47 /* GUItineraryLoader.m in Sources */,

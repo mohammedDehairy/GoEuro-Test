@@ -86,9 +86,8 @@ static NSString *const kGUTabBarCellcId = @"tabCell";
     return cell;
 }
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    GUTabBarViewItem *item = _items[indexPath.item];
     if(_tapCallBack){
-        _tapCallBack(item);
+        _tapCallBack(indexPath.item);
     }
     
     UICollectionViewLayoutAttributes *cellAttributes = [collectionView layoutAttributesForItemAtIndexPath:indexPath];
